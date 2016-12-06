@@ -10,3 +10,5 @@ puts "----------"
 @store1.update(name: 'Burn-baby')
 
 puts @store1.name
+
+puts Store.count
