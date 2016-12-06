@@ -8,4 +8,30 @@ require_relative './exercise_5'
 puts "Exercise 6"
 puts "----------"
 
-# Your code goes here ...
+@s1.employees.create(
+  first_name: 'Bob',
+  last_name: 'Bobberson',
+  hourly_rate: 30
+)
+@s1.employees.create(
+  first_name: 'Billy',
+  last_name: 'Bob',
+  hourly_rate: 32
+)
+@s2.employees.create(
+  first_name: 'Andy',
+  last_name: 'Anderson',
+  hourly_rate: 23
+)
+@s3.employees.create(
+  first_name: 'Chris',
+  last_name: 'Christerson',
+  hourly_rate: 30
+)
+@s3.employees.create(
+  first_name: 'Tony',
+  last_name: 'Antonerson',
+  hourly_rate: 30
+)
+
+@s3.employees.each { |e| puts "#{e.first_name} #{e.last_name}" }
